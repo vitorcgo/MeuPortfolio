@@ -1,0 +1,406 @@
+/* Centralizando a div.container com margin: 0 auto; */
+.container {
+    width: 100%;
+    /* Definindo uma largura fixa (ou qualquer valor desejado) */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    text-align: center;
+    /* Centraliza o conteúdo de texto dentro da div */
+    overflow: hidden;
+}
+
+
+.fundo-mp4 {
+    background: url(/src/assets/images/codding.gif) -126.105px 0px / 112.303% 112.183% no-repeat;
+    z-index: -1;
+    width: 100%;
+    height: 1080px;
+    flex-shrink: 0;
+    position: absolute
+}
+
+
+.header {
+    width: 100%;
+    height: 114px;
+    background: #141414;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar {
+    width: 1240px;
+    height: 77px;
+    border-radius: 60px;
+    background: #0a0a0a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.nav-bar-link ul {
+    display: flex;
+    gap: 38px;
+}
+
+.nav-bar-link ul li a {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.nav-bar-link ul li a:hover {
+    color: #A259FF;
+    font-weight: 500;
+}
+
+.style-btn {
+    border-radius: 40px;
+    background: #CD9D00;
+    width: 100px;
+    height: 33px;
+    padding: 2px 15px 1px 19px
+}
+
+
+.btn-redes {
+    display: flex;
+    gap: 23px;
+    cursor: pointer;
+}
+
+.responsive-btn {
+    display: none;
+}
+
+.main-home {
+    width: 100%;
+    height: 728px;
+    background: #141414d7;
+    display: flex;
+    justify-content: center;
+    gap: 173px;
+    padding-top: 160px;
+}
+
+.articles-home h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: "Protest Strike";
+    font-size: 128px;
+    font-weight: 400;
+    letter-spacing: -6.4px;
+    margin-bottom: -20px;
+}
+
+.articles-home h2 {
+    color: #A259FF;
+    text-align: center;
+    font-family: "Protest Strike";
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: -4px;
+    margin-top: -20px;
+
+}
+
+.articles-home h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: "Protest Strike";
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: -3.2px;
+}
+
+.artices-home-span {
+    color: #CD9D00;
+    font-family: "Protest Strike";
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: -3.2px;
+}
+
+.btn-contato {
+    width: 217px;
+    height: 47px;
+    border-radius: 50px;
+    background: #CD9D00;
+    margin-top: 34px;
+
+}
+
+.btn-contato a {
+    color: #FFF;
+    text-align: center;
+    font-family: "Protest Strike";
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.desça {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    margin: 79px 0px 30px 0px;
+}
+
+.main-sobremim {
+
+    width: 100%;
+    height: 1080px;
+    background: #141414;
+
+
+}
+
+.header-sobremim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.title-sobremim {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.title-sobremim p {
+    text-align: center;
+    font-family: "Protest Strike";
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: -1.0px;
+    background: linear-gradient(180deg, #FFF 0%, #CD9D00 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.descri-sobremim {
+    width: 1058px;
+    height: 114px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+
+
+}
+
+.section-sobremim {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding-top: 80px;
+}
+
+.sobre-mim-all h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 49px;
+
+
+}
+
+.sobre-mim-all h4 {
+    color: #FFF;
+    text-align: start;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.sobre-mim-all p span {
+    color: #CD9D00;
+    text-align: start;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sobre-mim-all p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: start;
+}
+
+.btn-download {
+    width: 426px;
+    height: 44px;
+    border-radius: 30px;
+    background: #CD9D00;
+    margin-top: 38px;
+    cursor: pointer;
+}
+
+.btn-download a {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.languagem {
+    width: 100%;
+    height: 107px;
+    background: #242424;
+    margin-top: 66px;
+    gap: 94px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.comp-container {
+    width: 100%;
+    height: 1080px;
+    background: #141414;
+    display: flex;
+    justify-content: center;
+    gap: 73px;
+    padding-top: 200px;
+}
+
+.card-comp div {
+    width: 453px;
+    height: 203px;
+    border-radius: 20px;
+    border: 5px solid #CD9D00;
+    background: #212121;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    padding-top: 25px;
+
+
+}
+
+.card-comp div h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 900;
+    align-items: center;
+
+}
+
+.card-comp div p {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.card2-comp {
+    margin: 49px 0px 49px 0px;
+}
+
+.article-comp h1 {
+    text-align: center;
+    font-family: "Protest Strike";
+    font-size: 96px;
+    font-weight: 400;
+    letter-spacing: -4.8px;
+    background: linear-gradient(180deg, #FFF 0%, #CD9D00 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Projetos */
+
+.projeto-container {
+    width: 100%;
+    height: 2700px;
+    background: #141414;
+    padding-top: 272px;
+}
+
+.projeto-container h1 {
+    text-align: center;
+    align-items: baseline;
+    font-family: "Protest Strike";
+    font-size: 96px;
+    font-weight: 400;
+    letter-spacing: -4.8px;
+    background: linear-gradient(180deg, #FFF 0%, #CD9D00 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-p div {
+    width: 100%;
+    max-width: 650px;
+    height: 540px;
+    border-radius: 30px;
+    border: 2px solid #CD9D00;
+    background: #212121;
+    margin: 90px 0px 37px 0px;
+
+
+}
+
+.contato-container {
+    width: 100%;
+    height: 1080px;
+    background: #000;
+}
+
+.contato-title {
+    padding-top: 150px;
+}
+
+
+.contato-title h1 {
+    color: #A259FF;
+    font-family: "Protest Strike";
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: -3.2px;
+    text-align: center;
+    margin: 30px 0px 40px 0px;
+
+}
+
+.contato-form input {
+    width: 100%;
+    max-width: 600px;
+    height: 51px;
+    border-radius: 10px;
+    border: 0.5px solid #000;
+    background: rgba(255, 255, 255, 0.20);
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.submit {
+    border-radius: 10px;
+    border: 0.5px solid #000;
+    background: rgba(82, 255, 2, 0.74) !important;
+    color: white;
+}

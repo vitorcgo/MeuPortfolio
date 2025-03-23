@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 a, li {
     text-decoration: none;
     list-style: none;

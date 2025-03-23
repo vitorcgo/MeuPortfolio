@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="stylesheet" href="/src/css/global.css">
     <link rel="stylesheet" href="/src/css/responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portifolio - Vitor Cavalcante</title>
 </head>
 
@@ -25,7 +26,7 @@
                 </div>
                 <!-- Navegação Principal -->
                 <div class="nav-bar-link">
-                    <ul>
+                    <ul data-aos="fade-down">
                         <li><a href="/src/index.html" class="style-btn">Inicio</a></li>
                         <li><a href="#sobre-mim">Sobre</a></li>
                         <li><a href="#projetos">Projetos</a></li>
@@ -56,11 +57,11 @@
         <main class="main-home">
             <article class="articles-home">
                 <!-- Main -->
-                <div>
+                <div data-aos="fade-right">
                     <!-- Titulo -->
                     <h1>Olá!</h1>
                     <h3>Me chamo <span class="articles-home-span">Vitor</span></h3>
-                    <h2 id="escrever"></h2>
+                    <h2 id="escrever" class="hover-escrever"></h2>
                     <!-- Btn-Contato -->
                     <button class="btn-contato"><a
                             href="https://api.whatsapp.com/send/?phone=5511944506528&text&type=phone_number&app_absent=0"
@@ -73,7 +74,7 @@
                 </div>
             </article>
             <!-- Maker Retro -->
-            <article class="responsive-img">
+            <article class="responsive-img" data-aos="fade-left">
                 <img src="/src/assets/images/maker-retro-pc.png">
             </article>
         </main>
@@ -87,7 +88,7 @@
                     <img src="/src/assets/images/checked-user-male.svg">
                     <p>Sobre mim</p>
                 </div>
-                <div class="descri-sobremim">
+                <div class="descri-sobremim" data-aos="fade-down">
                     <p>Sou formando em Sistemas para Internet e tenho experiência em desenvolvimento web principalmente
                         com Javascript. Desenvolvi com frameworks web como TailwindCSS, Angular, Bootstrap, e priorizo
                         ​​a qualidade e clareza do código. Também tenho experiência em HTML, CSS, e conhecimento de
@@ -99,11 +100,11 @@
 
             <section class="section-sobremim">
                 <!-- Foto -->
-                <div>
+                <div data-aos="fade-right">
                     <img src="/src/assets/images/img.png" class="img">
                 </div>
                 <!-- Sobremim -->
-                <div class="sobre-mim-all">
+                <div class="sobre-mim-all" data-aos="fade-left">
                     <h1>Desenvolvedor Web e Designer</h1>
                     <h4>Vitor Cavalcante Gomes</h4>
                     <p><span>Linkedin: </span> linkedin.com/in/vitorcgms/ </p>
@@ -156,25 +157,25 @@
             <!-- Right - Competencias -->
             <article class="article-comp responsive">
                 <h1>Competências</h1>
-                <img src="/src/assets/images/Notebook.png">
+                <img src="/src/assets/images/Notebook.png" data-aos="fade-up">
             </article>
             <!-- Cards -->
             <article class="card-comp">
                 <!-- Card 1 -->
-                <div>
+                <div data-aos="fade-left">
                     <img src="/src/assets/images/web.png">
                     <h2>Desenvolvimento Web</h2>
                     <p>Site personalizados criados com tecnologias modernas para experiencia e desempenho do usuario</p>
                 </div>
                 <!-- Card 2 -->
-                <div class="card2-comp">
+                <div class="card2-comp" data-aos="fade-left">
                     <img src="/src/assets/images/imagespaintbrush.png">
                     <h2>Designer UI/UX</h2>
                     <p>Interfaces de usuário intuitivas e atraentes que aumentam o envolvimento e a satisfação do
                         usuario</p>
                 </div>
                 <!-- Card 3 -->
-                <div>
+                <div data-aos="fade-left">
                     <img src="/src/assets/images/tools.png">
                     <h2>Criação de Sistemas</h2>
                     <p>Criação de Sistemas para aplicativos ou sites web, usando tecnologias mais recentes e aplicando a
@@ -189,7 +190,7 @@
         <main class="projetos-container" id="projetos">
             <h1 class="projeto-h1">Projetos</h1>
             <!-- Caixa -->
-            <div class="caixa-1">
+            <div class="caixa-1" data-aos="fade-right">
                 <div class="caixa-interior">
                     <div class="conteudo-caixa-1">
                         <figure>
@@ -230,7 +231,7 @@
             </div>
 
             <!-- Projeto 3 -->
-            <div class="caixa-1">
+            <div class="caixa-1 " data-aos="fade-left">
                 <div class="caixa-interior">
                     <div class="conteudo-caixa-1">
                         <figure>
@@ -250,8 +251,8 @@
                 </div>
 
                 <!-- Projeto 4 -->
-                <div class="caixa-interior">
-                    <div class="conteudo-caixa-2">
+                <div class="caixa-interior" >
+                    <div class="conteudo-caixa-2" >
                         <figure>
                             <img src="/src/assets/images/listadecontatos.png" alt="">
                         </figure>
@@ -269,7 +270,7 @@
                 </div>   
             </div>
                         <!-- Projeto 5 -->
-                        <div class="caixa-1">
+                        <div class="caixa-1 " data-aos="fade-up">
                             <div class="caixa-interior">
                                 <div class="conteudo-caixa-1">
                                     <figure >
@@ -282,8 +283,8 @@
                                         <img src="/src/assets/images/css3" alt="">
                                     </figure>
                                     <div class="deploy">
-                                        <button><a href="" target="_blank">Deploy</a></button>
-                                        <button><a href="" target="_blank">Code - Github</a></button>
+                                        <button><a href="https://orbeo.vercel.app/" target="_blank">Deploy</a></button>
+                                        <button><a href="https://github.com/vitorcgo/orbeo" target="_blank">Code - Github</a></button>
                                     </div>
                                 </div>
                             </div>
@@ -299,28 +300,28 @@
         <main class="contato-container" id="contato">
             <!-- Title -->
             <article class="contato-title">
-                <img src="/src/assets/images/star.png" />
-                <h1>Preencha e entrarei em contato com você!</h1>
+                <img src="/src/assets/images/star.png" / data-aos="fade-up">
+                <h1 data-aos="fade-up">Preencha e entrarei em contato com você!</h1>
             </article>
             <!-- Form -->
             <form action="/src/php/processa_email.php" method="POST" class="contato-form">
                 <label for="name">
-                    <input type="text" name="name" id="name" placeholder="Nome Completo" required>
+                    <input type="text" name="name" id="name" placeholder="Nome Completo" required data-aos="fade-left">
                 </label>
                 <br>
                 <label for="email">
-                    <input type="email" name="email" id="email" placeholder="E-mail do Cliente" required>
+                    <input type="email" name="email" id="email" placeholder="E-mail do Cliente" required data-aos="fade-left">
                 </label>
                 <br>
                 <label for="telefone">
-                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone/WhatsApp" required>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone/WhatsApp" required data-aos="fade-left">
                 </label>
                 <br>
                 <label for="text">
-                    <input type="text" name="text" id="text" placeholder="Diga mais sobre o serviço desejado!" required>
+                    <input type="text" name="text" id="text" placeholder="Diga mais sobre o serviço desejado!" required data-aos="fade-left">
                 </label>
                 <br>
-                <input type="submit" value="Enviar" class="submit">
+                <input type="submit" value="Enviar" class="submit" data-aos="fade-up">
             </form>
         </main>
 
@@ -328,5 +329,9 @@
 </body>
 
 <script src="/src/js/escrever.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 
 </html>

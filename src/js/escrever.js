@@ -1,7 +1,7 @@
 const textElement = document.getElementById("escrever");
 const texts = [
-  " sou desenvolvedor front-end!",
-  " sou desenvolvedor back-end!",
+  " desenvolvedor front-end!",
+  " desenvolvedor back-end!",
   " designer grafico!",
 ];
 let textIndex = 0;

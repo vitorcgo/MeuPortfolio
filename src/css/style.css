@@ -132,6 +132,7 @@
     border-radius: 50px;
     background: #CD9D00;
     margin-top: 34px;
+    cursor: pointer;
 
 }
 
@@ -364,9 +365,22 @@
     border-radius: 30px;
     border: 2px solid #CD9D00;
     background: #212121;
+    transition: all 0.3s ease;
+    position: relative;  /* Necessário para destacar os cards no hover */
 
 
 }
+
+/* Faz com que todos os irmãos da caixa em hover fiquem embaçados */
+.caixa-interior:hover ~ .caixa-interior {
+    filter: blur(4px);  /* Embaça os outros cards */
+  }
+  
+  .caixa-interior:hover {
+    filter: blur(0);  /* Remove o blur do card que está com hover */
+    transform: scale(1.05);  /* Aplica zoom */
+    z-index: 1;  /* Destaca a caixa */
+  }
 
 .conteudo-caixa-1 {
     display: flex;
@@ -494,4 +508,22 @@ letter-spacing: -0.7px;
     border: 0.5px solid #000;
     background: rgba(82, 255, 2, 0.74) !important;
     color: white;
+}
+
+.hover-escrever:hover {
+    color: #CD9D00;
+    cursor: pointer;
+
+}
+
+.btn-contato:hover {
+    background:#A259FF
+}
+
+.btn-contato:active {
+    background:#CD9D00
+}
+
+.btn-download:hover {
+    background:#A259FF
 }

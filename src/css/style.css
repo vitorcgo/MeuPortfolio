@@ -329,46 +329,17 @@
 
 /* Projetos */
 
-.projeto-container {
-    width: 100%;
-    height: 2700px;
-    background: #141414;
-    padding-top: 272px;
-}
 
-.projeto-container h1 {
-    text-align: center;
-    align-items: baseline;
-    font-family: "Protest Strike";
-    font-size: 96px;
-    font-weight: 400;
-    letter-spacing: -4.8px;
-    background: linear-gradient(180deg, #FFF 0%, #CD9D00 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.card-p div {
-    width: 100%;
-    max-width: 650px;
-    height: 540px;
-    border-radius: 30px;
-    border: 2px solid #CD9D00;
-    background: #212121;
-    margin: 90px 0px 37px 0px;
-
-
-}
+/* Contato */
 
 .contato-container {
     width: 100%;
-    height: 1080px;
+    height: 1100px;
     background: #000;
 }
 
 .contato-title {
-    padding-top: 150px;
+    padding-top: 120px;
 }
 
 

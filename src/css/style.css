@@ -527,3 +527,7 @@ letter-spacing: -0.7px;
 .btn-download:hover {
     background:#A259FF
 }
+
+.mobile-menu {
+    display: none;
+}

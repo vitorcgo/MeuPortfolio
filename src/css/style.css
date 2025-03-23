@@ -329,6 +329,122 @@
 
 /* Projetos */
 
+.projetos-container {
+    height: 1300px;
+    width: 100%;
+    background: #141414;
+}
+
+.projeto-h1 {
+    text-align: left;
+    padding-left: 15%;
+    font-family: "Protest Strike";
+    font-size: 96px;
+    font-weight: 400;
+    letter-spacing: -4.8px;
+    background: linear-gradient(180deg, #FFF 0%, #CD9D00 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.caixa-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 62px;
+    padding-top: 5%;
+    flex-wrap: wrap;
+}
+
+.caixa-interior {
+    width: 437px;
+    height: 413px;
+    border-radius: 30px;
+    border: 2px solid #CD9D00;
+    background: #212121;
+
+
+}
+
+.conteudo-caixa-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-caixa-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4px;
+}
+
+
+.conteudo-caixa-1 p {
+    color: #FFF;
+    width: 330px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.7px;
+    width: 100%;
+    max-width: 330px ;
+}
+
+.conteudo-caixa-2 p {
+    color: #FFF;
+    width: 330px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.7px;
+    width: 100%;
+    max-width: 366px ;
+}
+
+.padding {
+    padding: 10px 0px 20px 0px;
+}
+
+.span-y {
+color: #FFC400;
+font-family: Poppins;
+font-size: 14px;
+font-weight: 700;
+letter-spacing: -0.7px;
+}
+
+
+/* BTN-DEPLOY */
+
+.deploy {
+    width: 100%;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.deploy button {
+    width: 143px;
+    height: 23px;
+    border-radius: 30px;
+    background: #CD9D00;
+}
+
+.deploy button a {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.7px;
+}
+
+
 
 /* Contato */
 

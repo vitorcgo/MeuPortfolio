@@ -24,14 +24,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "Reply-To: " . $email . "\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion();
 
+    $sucesso = mail($para, $assunto, $corpo, $headers);
 
-    if (mail($para, $assunto, $corpo, $headers)) {
-        header("Location: index.html?mensagem=enviada");
-        exit;
-    } else {
-        header("Location: index.html?mensagem=erro");
-        exit;
-    }
+    echo '
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mensagem</title>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body>
+        <script>
+            Swal.fire({
+                icon: "' . ($sucesso ? 'success' : 'error') . '",
+                title: "' . ($sucesso ? 'Mensagem enviada!' : 'Erro ao enviar') . '",
+                text: "' . ($sucesso ? 'Em breve entrarei em contato com você.' : 'Tente novamente mais tarde.') . '",
+                confirmButtonText: "Ok"
+            }).then(() => {
+                window.location.href = "https://vitorgomes.tech";
+            });
+        </script>
+    </body>
+    </html>';
 }
-
 ?>

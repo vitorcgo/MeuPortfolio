@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Configura o e-mail
     $para = "admin@vitorgomes.tech";
-    $assunto = "Novo Contato - Formulário de Serviço";
+    $assunto = "Novo Contato - Formulario de Servico!";
     $corpo = "Nome: $nome\n";
     $corpo .= "E-mail: $email\n";
     $corpo .= "Telefone: $telefone\n";

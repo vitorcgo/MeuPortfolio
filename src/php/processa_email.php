@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("E-mail inválido.");
     }
 
-    $para = "zbro2018@gmail.com"; 
+    $para = "admin@vitorgomes.tech"; 
     $assunto = "Novo Contato - Formulário de Serviço";
 
     $corpo = "Você recebeu um novo contato do formulário:\n\n";

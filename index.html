@@ -320,7 +320,7 @@
                 <h1 data-aos="fade-up">Preencha e entrarei <br>em contato com você!</h1>
             </article>
             <!-- Form -->
-            <form action="/src/php/processa_email.php" method="POST" class="contato-form">
+            <form action="/src/php/processa_email.php" method="POST" class="contato-form" id="form">
                 <label for="name">
                     <input type="text" name="name" id="name" placeholder="Nome Completo" required data-aos="fade-left">
                 </label>
@@ -346,7 +346,57 @@
 
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  const form = document.querySelector("form"); // ou use um ID se preferir: document.getElementById("meu-form")
 
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch("enviar.php", {
+      method: "POST",
+      body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+      if (data.trim() === "sucesso") {
+        Swal.fire({
+          icon: 'success',
+          title: 'Mensagem enviada!',
+          text: 'Em breve entrarei em contato com você.',
+          background: '#1e1e1e',
+          color: '#fff',
+          iconColor: '#00ff88',
+          confirmButtonColor: '#00ff88'
+        });
+        form.reset(); // limpa o formulário
+      } else {
+        Swal.fire({
+          icon: 'error',
+          title: 'Erro ao enviar',
+          text: 'Tente novamente mais tarde.',
+          background: '#1e1e1e',
+          color: '#fff',
+          iconColor: '#ff4444',
+          confirmButtonColor: '#ff4444'
+        });
+      }
+    })
+    .catch(error => {
+      console.error("Erro:", error);
+      Swal.fire({
+        icon: 'error',
+        title: 'Erro inesperado',
+        text: 'Tente novamente.',
+        background: '#1e1e1e',
+        color: '#fff',
+        confirmButtonColor: '#ff4444'
+      });
+    });
+  });
+</script>
 <script src="/src/js/escrever.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>

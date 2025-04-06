@@ -24,10 +24,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "Reply-To: " . $email . "\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion();
 
+
     if (mail($para, $assunto, $corpo, $headers)) {
-        echo "Mensagem enviada com sucesso!";
+        header("Location: index.html?mensagem=enviada");
+        exit;
     } else {
-        echo "Erro ao enviar a mensagem. Tente novamente!.";
+        header("Location: index.html?mensagem=erro");
+        exit;
     }
 }
 

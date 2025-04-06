@@ -494,8 +494,9 @@ letter-spacing: -0.7px;
     height: 51px;
     border-radius: 10px;
     border: 0.5px solid #000;
-    background: rgb(27, 27, 27);
-    color: white;
+    color: white !important;
+    background-color: #111 !important; /* ou qualquer cor visível */
+    caret-color: white !important;     /* cor da barrinha de digitação */
     text-align: center;
     font-family: Poppins;
     font-size: 14px;
@@ -560,9 +561,3 @@ letter-spacing: -0.7px;
     width: 15%;
 }
 
-input,
-textarea {
-  color: white !important;
-  background-color: #111 !important; /* ou qualquer cor visível */
-  caret-color: white !important;     /* cor da barrinha de digitação */
-}

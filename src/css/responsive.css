@@ -313,11 +313,5 @@
         width: 50%;
     }
 
-    input,
-textarea {
-  color: white !important;
-  background-color: #111 !important; /* ou qualquer cor visível */
-  caret-color: white !important;     /* cor da barrinha de digitação */
-}
 
 }

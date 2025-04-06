@@ -85,7 +85,7 @@
     display: flex;
     justify-content: center;
     gap: 173px;
-    padding-top: 160px;
+    padding-top: 100px;
 }
 
 .articles-home h1 {
@@ -545,4 +545,13 @@ letter-spacing: -0.7px;
     z-index: 9999; /* Fica acima de outros elementos */
     font-size: 24px;
 
+}
+
+.imagem-gif-vitor {
+    max-width: 650px;
+    max-height: 650px;
+}
+
+.img-responsive {
+    display: none;
 }

@@ -28,7 +28,7 @@
         background: url(/src/assets/images/codding.gif) -126.105px 0px / 332.918% 100.093% no-repeat;
         z-index: -1;
         width: 100%;
-        height: 728px;
+        height: 1300px;
         position: absolute;
     }
 
@@ -39,16 +39,18 @@
 
     .main-home {
         width: 100%;
-        padding-top: 34px;
+        padding-top: 10px;
         gap: 5px;
-        height: 600px;
+        height: 1000px;
+        flex-direction: column;
+        justify-content: start;
     }
 
     .articles-home h1 {
         color: #FFF;
         text-align: center;
         font-family: "Protest Strike";
-        font-size: 96px;
+        font-size: 90px;
         font-weight: 400;
         letter-spacing: -4.8px;
 
@@ -112,6 +114,16 @@
 
     .responsive-img {
         display: none;
+    }
+
+    .img-responsive {
+        align-self: center;
+        display: contents;
+        
+    }
+
+    .imagem-gif-vitor {
+        width: 80%;
     }
 
     /* Sobre mim */

@@ -320,7 +320,7 @@
                 <h1 data-aos="fade-up">Preencha e entrarei <br>em contato com você!</h1>
             </article>
             <!-- Form -->
-            <form action="/src/php/processa_email.php" method="POST" class="contato-form" id="form">
+            <form action="/src/php/processa_email.php" method="POST" class="contato-form" id="meu-form">
                 <label for="name">
                     <input type="text" name="name" id="name" placeholder="Nome Completo" required data-aos="fade-left">
                 </label>
@@ -347,8 +347,9 @@
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
-  const form = document.querySelector("form"); // ou use um ID se preferir: document.getElementById("meu-form")
+  const form = document.querySelector("#meu-form"); // Corrigido: adicionei #
 
   form.addEventListener("submit", function(e) {
     e.preventDefault();
@@ -361,6 +362,7 @@
     })
     .then(response => response.text())
     .then(data => {
+      console.log("Resposta do PHP:", data); // Debug
       if (data.trim() === "sucesso") {
         Swal.fire({
           icon: 'success',
@@ -371,25 +373,33 @@
           iconColor: '#00ff88',
           confirmButtonColor: '#00ff88'
         });
-        form.reset(); // limpa o formulário
+        form.reset();
+      } else if (data.trim() === "erro_email_invalido") {
+        Swal.fire({
+          icon: 'error',
+          title: 'E-mail inválido',
+          text: 'Verifique o e-mail digitado.',
+          background: '#1e1e1e',
+          color: '#fff',
+          confirmButtonColor: '#ff4444'
+        });
       } else {
         Swal.fire({
           icon: 'error',
-          title: 'Erro ao enviar',
-          text: 'Tente novamente mais tarde.',
+          title: 'Erro no envio',
+          text: 'Ocorreu um erro. Tente novamente mais tarde.',
           background: '#1e1e1e',
           color: '#fff',
-          iconColor: '#ff4444',
           confirmButtonColor: '#ff4444'
         });
       }
     })
     .catch(error => {
-      console.error("Erro:", error);
+      console.error("Erro na requisição:", error);
       Swal.fire({
         icon: 'error',
-        title: 'Erro inesperado',
-        text: 'Tente novamente.',
+        title: 'Falha na conexão',
+        text: 'Verifique sua internet e tente novamente.',
         background: '#1e1e1e',
         color: '#fff',
         confirmButtonColor: '#ff4444'

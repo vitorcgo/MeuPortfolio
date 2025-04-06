@@ -3,11 +3,11 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Sanitiza os dados
-    $nome = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+    // Sanitização atualizada (sem FILTER_SANITIZE_STRING)
+    $nome = htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8');
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-    $telefone = filter_var($_POST['telefone'], FILTER_SANITIZE_STRING);
-    $mensagem = filter_var($_POST['text'], FILTER_SANITIZE_STRING);
+    $telefone = htmlspecialchars($_POST['telefone'], ENT_QUOTES, 'UTF-8');
+    $mensagem = htmlspecialchars($_POST['text'], ENT_QUOTES, 'UTF-8');
 
     // Validação do e-mail
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $corpo .= "Mensagem: $mensagem\n";
     $headers = "From: $email\r\nReply-To: $email\r\n";
 
-    // Tenta enviar o e-mail
+    // Envia o e-mail
     if (mail($para, $assunto, $corpo, $headers)) {
         echo "sucesso";
     } else {
